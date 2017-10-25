@@ -62,8 +62,9 @@ capra-bash mon_conteneur # ouvre bash dans le conteneur 'mon_conteneur'
 capra-bash --root mon_conteneur # ouvre bash en tant que root dans le conteneur 'mon_conteneur'
 ```
 
-ATTENTION: n'utiliser root que pour rouler des commandes telles que
-`apt` dans le conteneur. Sinon, tous les fichiers que vous crééerez dans
+ATTENTION: n'utiliser root que pour rouler des commandes telles que `apt` dans
+le conteneur. Sinon, tous les fichiers que vous crééerez dans le conteneur
+appartiendront à root sur votre machine hôte.
 
 ## Docker
 Les scripts sont simples et ne sont là que pour simplifier l'utilisation de Docker.
