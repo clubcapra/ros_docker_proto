@@ -12,4 +12,4 @@ else
     DOCKER='sudo docker'
 fi
 
-$DOCKER build . -t capra/ros --build-arg USER=$USERNAME --build-arg UID=$UID --build-arg GID=$(id -g $UID)
+$DOCKER build . -t capra/ros --build-arg USER=$(id -un) --build-arg UID=$UID --build-arg GID=$(id -g $UID)
