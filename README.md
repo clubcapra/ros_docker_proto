@@ -7,13 +7,10 @@ Fichier Dockerfile et scripts servant à faciliter l'utilisation de Docker.
 Pour installer Docker, suivez les instructions d'installation sur
 [le site officiel](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
 
-La plupart des commandes présentées ici utilisent Docker implicitement. Afin
-qu'elles fonctionnent, vous devrez soit ajouter votre utilisateur dans le groupe
-_docker_ puis vous reconnecter, soit utiliser ces commandes avec `sudo`.
-
 ### Script build.sh
 Script servant à compiler l'image. Une fois compilée, l'image peut être utilisée
-par plusieurs conteneurs Docker. Le nom de l'image est _capra/ros_.
+par plusieurs conteneurs Docker. Le nom de l'image est _capra/ros_. Ne pas rouler
+avec `sudo`, le script utilisera `sudo` si nécessaire.
 
 Commandes:
 
