@@ -16,8 +16,9 @@ RUN apt-get install -y ros-kinetic-rqt ros-kinetic-rqt-common-plugins
 RUN apt-get install -y ros-kinetic-pointgrey-camera-driver
 RUN apt-get install -y ros-kinetic-lms1xx
 RUN apt-get install -y ros-kinetic-sick-tim
+RUN apt-get install -y vim
 
-RUN groupadd capra -g $GID && useradd -m -u $UID -g $GID -p capra $USER
+RUN groupadd $USER -g $GID && useradd -m -u $UID -g $GID -p capra $USER
 
 RUN echo 'source /opt/ros/$ROS_DISTRO/setup.bash' >> /home/$USER/.bashrc
 
