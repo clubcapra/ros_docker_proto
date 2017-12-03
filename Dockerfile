@@ -4,7 +4,11 @@ ARG UID
 ARG GID
 
 RUN apt-get update && apt-get install -y \
-    ros-kinetic-gazebo-ros-pkgs
+    ros-kinetic-gazebo-ros-pkgs \
+    ros-kinetic-image-view \
+    ros-kinetic-rqt \
+    ros-kinetic-rqt-common-plugins \
+    ros-kinetic-pointgrey-camera-driver
 
 RUN groupadd capra -g $GID && useradd -m -u $UID -g $GID -p capra $USER
 
