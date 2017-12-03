@@ -19,4 +19,4 @@ else
     name='capra'
 fi
 
-$DOCKER run -it -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=$DISPLAY -v $(pwd):/capra -u $UID:$(id -g $UID) --name $name capra/ros
+$DOCKER run -it -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=$DISPLAY -v $(pwd):/capra -u $UID:$(id -g $UID) --net=host --name $name capra/ros
