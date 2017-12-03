@@ -17,6 +17,7 @@ RUN apt-get install -y ros-kinetic-pointgrey-camera-driver
 RUN apt-get install -y ros-kinetic-lms1xx
 RUN apt-get install -y ros-kinetic-sick-tim
 RUN apt-get install -y vim
+RUN apt-get install -y ros-kinetic-astra-camera
 
 RUN groupadd $USER -g $GID && useradd -m -u $UID -g $GID -p capra $USER
 
